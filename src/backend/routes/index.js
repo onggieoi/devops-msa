@@ -11,6 +11,8 @@ const routes = (app) => {
       text: req.body.text,
     });
 
+    console.log(todo);
+
     todo
       .save()
       .then((result) => {
